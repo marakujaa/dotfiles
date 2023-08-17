@@ -36,7 +36,8 @@ window#waybar {
 #temperature,
 #backlight,
 #bluetooth,
-#clock {
+#clock,
+#custom-spotify {
   margin-top: 4px;
   margin-bottom: 4px;
   margin-left: 4px;
@@ -48,6 +49,12 @@ window#waybar {
   border-radius: 20px;
 
   transition: none;
+}
+
+#custom-spotify {
+	margin-left: 10px;
+	color: #4d4d4d;
+	background: #77dd77;
 }
 
 #network {

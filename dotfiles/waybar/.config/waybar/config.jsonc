@@ -62,10 +62,13 @@
   },
 
   "custom/spotify": {
-    "format": " {}",
-    "max-length": 40,
-    "interval": 30, // Remove this if your script is endless and write in loop
-    "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
-    "exec-if": "pgrep spotify"
+    "format": "  {}",
+    "exec": "spt pb -s -f '%s %t' 2>/dev/null",
+    "interval": 2,
+    "on-click": "spt pb -t 2>/dev/null",
+    "on-scroll-up": "spt pb -n 2>/dev/null",
+    "on-scroll-down": "spt pb -p 2>/dev/null",
+    "max-length": 20,
+    "tooltip": true
   }
 }
