@@ -1,0 +1,71 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "modules-left": ["wlr/workspaces", "custom/spotify"],
+  "modules-right": ["pulseaudio", "battery", "network", "cpu", "temperature", "backlight", "bluetooth", "clock"],
+  "sway/window": {
+    "maw-length": 50
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "clock": {
+    "format-alt": "{:%a, %d. %b  %H:%M}"
+  },
+
+  "wlr/workspaces": {
+    "sort-by-number": true
+  },
+
+  "bluetooth": {
+    "format-connected": "{device_alias} 󰂯",
+    "format-connected-battery": "{device_alias} 󰂯 {device_battery_percentage}%",
+    "format-disabled": ""
+  },
+
+  "network": {
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-wifi": "{essid} ({signalStrength}%) {icon}",
+    "format-disconnected": "Disconnected 󰤮"
+  },
+
+  "cpu": {
+    "format": "{usage}% "
+  },
+
+  "temperature": {
+    "format-icons": ["", "", "", "", ""],
+    "format": "{temperatureC}°C {icon}"
+  },
+
+  "backlight": {
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "format": "{percent}% {icon}"
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-muted": "",
+    "format-icons": {
+      "headphones": "󰋋",
+      "speaker": "󰓃",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    }
+  },
+
+  "custom/spotify": {
+    "format": " {}",
+    "max-length": 40,
+    "interval": 30, // Remove this if your script is endless and write in loop
+    "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
+    "exec-if": "pgrep spotify"
+  }
+}
