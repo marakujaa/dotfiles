@@ -2,7 +2,7 @@
   "layer": "bottom",
   "position": "top",
   "modules-left": ["wlr/workspaces", "mpris"],
-  "modules-right": ["pulseaudio", "battery", "network", "cpu", "temperature", "backlight", "bluetooth", "clock"],
+  "modules-right": ["pulseaudio", "bluetooth", "backlight", "network", "temperature", "cpu", "battery", "clock"],
   "sway/window": {
     "maw-length": 50
   },
