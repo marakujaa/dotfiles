@@ -56,3 +56,23 @@ window#waybar {
 #mpris {
 	margin-left: 10px;
 }
+
+#battery.critical:not(.charging),
+#temperature.critical,
+#network.disconnected {
+  background: #c84361;
+}
+
+#bluetooth.connected {
+  background: #8294c4;
+}
+
+#mpris.spotifyd.playing {
+  background: #1db954;
+  color: #4d4d4d;
+}
+
+#battery.warning:not(.charging) {
+  background: #f1c27b;
+  color: #4d4d4d;
+}
