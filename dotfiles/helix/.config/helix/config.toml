@@ -1,3 +1,5 @@
+theme = "my-autumn"
+
 [editor]
 line-number = "relative"
 bufferline = "multiple"

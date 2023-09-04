@@ -1,0 +1,30 @@
+inherits = "autumn"
+
+function = "blue"
+
+"keyword" = "orange"
+"keyword.directive" = "yellow-dark"
+"keyword.control" = "orange"
+"keyword.storage" = "orange"
+"keyword.function" = "orange"
+
+"ui.background" = { bg = "black" }
+"ui.linenr" = { bg = "black", fg = "gray" }
+"ui.linenr.selected" = { bg = "black", fg = "white" }
+"ui.gutter" = { bg = "black" }
+
+[palette]
+black = "#1E1F22"
+white = "#B9BCD1"
+orange = "#FAAB78"
+yellow-dark = "#FFF798"
+yellow = "#F2C55C"
+purple-light = "#B5B6E3"
+blue = "#AEE2FF"
+cyan = "#2AACB8"
+gray = "#6F737A"
+gray-dark = "#272727"
+gray-light = "#404040"
+green-dark = "#5F8C8A"
+green = "#6AAB73"
+red = "#D64D5B"
