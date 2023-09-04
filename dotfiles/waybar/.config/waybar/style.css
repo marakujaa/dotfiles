@@ -71,6 +71,9 @@ window#waybar {
   background: #1db954;
   color: #4d4d4d;
 }
+#mpris.firefox.playing {
+  background: #FE3E41;
+}
 
 #battery.warning:not(.charging) {
   background: #f1c27b;

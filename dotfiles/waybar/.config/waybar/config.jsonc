@@ -69,7 +69,8 @@
 	  "player-icons": {
 		  "default": "▶",
 		  "mpv": "🎵",
-      "spotifyd": " "
+      "spotifyd": " ",
+      "firefox": "󰈹 "
 	  },
 	  "status-icons": {
 		"paused": "⏸"
