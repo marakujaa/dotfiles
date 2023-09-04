@@ -1,0 +1,9 @@
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[keys.insert.j]
+h = "normal_mode"
