@@ -1,55 +1,86 @@
 {
   "layer": "bottom",
   "position": "top",
-  "modules-left": ["wlr/workspaces", "mpris"],
-  "modules-right": ["pulseaudio", "bluetooth", "backlight", "network", "temperature", "cpu", "battery", "clock"],
+  "modules-left": [
+    "wlr/workspaces",
+    "mpris"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "bluetooth",
+    "backlight",
+    "network",
+    "temperature",
+    "cpu",
+    "battery",
+    "clock"
+  ],
   "sway/window": {
     "maw-length": 50
   },
-
   "battery": {
     "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "states": {
       "warning": 30,
       "critical": 15
     }
   },
-
   "clock": {
     "format-alt": "{:%a, %d. %b  %H:%M}"
   },
-
   "wlr/workspaces": {
     "sort-by-number": true
   },
-
   "bluetooth": {
     "format-connected": "{device_alias} 󰂯",
     "format-connected-battery": "{device_alias} 󰂯 {device_battery_percentage}%",
     "format-disabled": ""
   },
-
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
     "format-wifi": "{essid} ({signalStrength}%) {icon}",
     "format-disconnected": "Disconnected 󰤮"
   },
-
   "cpu": {
     "format": "{usage}% "
   },
-
   "temperature": {
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "format": "{temperatureC}°C {icon}"
   },
-
   "backlight": {
-    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "format": "{percent}% {icon}"
   },
-
   "pulseaudio": {
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% {icon} ",
@@ -57,23 +88,26 @@
     "format-icons": {
       "headphones": "󰋋",
       "speaker": "󰓃",
-      "default": ["󰕿", "󰖀", "󰕾"]
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
     }
   },
-
   "mpris": {
     "format": "{player_icon} {title}",
-	  "format-paused": "{status_icon} <i>{title}</i>",
+    "format-paused": "{status_icon} <i>{title}</i>",
     "interval": 1,
     "max-length": 30,
-	  "player-icons": {
-		  "default": "▶",
-		  "mpv": "🎵",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵",
       "spotifyd": " ",
       "firefox": "󰈹 "
-	  },
-	  "status-icons": {
-		"paused": "⏸"
-	  }
+    },
+    "status-icons": {
+      "paused": "⏸"
+    }
   }
 }
