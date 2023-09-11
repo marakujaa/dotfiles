@@ -9,3 +9,7 @@ insert = "bar"
 
 [keys.insert.j]
 h = "normal_mode"
+
+[keys.normal]
+tab = ":bn"
+S-tab = ":bp"
