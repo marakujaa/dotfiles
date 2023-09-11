@@ -1,0 +1,24 @@
+[core]
+editor = helix
+pager = bat
+
+# aliases
+[alias]
+a = add
+b = branch
+ci = commit
+co = checkout
+d = diff
+dc = diff --cached
+l = log --oneline
+la = log --oneline --all
+lag = log --oneline --all --graph
+pom = push origin main
+sw = switch
+st = status
+s = status --short --branch
+r = reflog
+
+# user settings
+[include]
+path = user
