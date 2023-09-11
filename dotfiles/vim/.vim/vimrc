@@ -1,0 +1,18 @@
+inoremap jh <Esc>
+nnoremap <Tab> gt
+nnoremap <S-Tab> gT
+
+set relativenumber
+set number
+
+syntax on
+set wildmenu
+
+set tabstop=2
+set autoindent
+set expandtab
+set softtabstop=2
+
+set mouse=a
+
+set viminfofile=~/.vim/viminfo
