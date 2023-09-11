@@ -1,0 +1,37 @@
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#fdf6e3"
+
+window:
+  opacity: 0.75
+  padding:
+    x: 5
+    y: 5
+
+  dynamic_title: true
+  dynamic_padding: true
+
+font:
+  normal:
+    family: Iosevka Nerd Font
+  bold:
+    family: Iosevka Nerd Font
+    style: Bold
+  size: 12.0
+draw_bold_text_with_bright_colors: true
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+live_config_reload: true
+
+key_bindings:
+  - { key: Return, mods: Command|Shift, action: SpawnNewInstance }
+
+shell:
+  program: /bin/bash
