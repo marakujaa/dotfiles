@@ -12,3 +12,11 @@ comment-token = "#"
 indent = { tab-width = 4, unit = "     "}
 language-server = { command = "pylsp" }
 auto-format = true
+
+[[language]]
+name = "cpp"
+comment-token = "//"
+indent = { tab-width = 2, unit = "  "}
+language-server = { command = "clangd" }
+formatter = { command = "clang-format" }
+auto-format = true
