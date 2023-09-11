@@ -2,7 +2,7 @@
   "layer": "bottom",
   "position": "top",
   "modules-left": [
-    "wlr/workspaces",
+    "hyprland/workspaces",
     "mpris"
   ],
   "modules-right": [
@@ -34,9 +34,6 @@
   },
   "clock": {
     "format-alt": "{:%a, %d. %b  %H:%M}"
-  },
-  "wlr/workspaces": {
-    "sort-by-number": true
   },
   "bluetooth": {
     "format-connected": "{device_alias} 󰂯",
